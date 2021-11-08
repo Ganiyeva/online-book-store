@@ -12,15 +12,12 @@ function App() {
     <Router>
       <div>
         <Switch>
-          <Route path="/readbook">
-            <ReadBook />
-          </Route>
-          <Route path="/filter">
-            <Filter />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
+          <Route path="/readbook" element ={<ReadBook />}/>
+          
+          <Route path="/filter" element = {<Filter />}/>
+           
+          <Route path="/" element ={<Home />}/>
+            
         </Switch>
       </div>
     </Router>
