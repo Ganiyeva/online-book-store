@@ -1,10 +1,10 @@
-import Link from 'react';
+import {Link}  from 'react-router-dom';
 
 
 const Header = () => {
     return(
         <div>
-            <img src="img/Book.svg" alt="book-logo"/>
+            <img src="img/images.png" alt="book-logo"/>
             <div className="container">
                 <nav>
                     <Link to="/src/pages/Home.js">Home</Link>
