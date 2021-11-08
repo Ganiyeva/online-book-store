@@ -10,12 +10,13 @@ import {
 import ReadBook from './pages/ReadBook';
 import Filter from './pages/Filter';
 import Home from './pages/Home';
-// import Header from './components/Header/Header';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <Router>
-      {/* <Header/> */}
+      <Header/>
+      <Sidebar/>
         <Routes>
           <Route path="/readbook" element ={<ReadBook />}/>
           
