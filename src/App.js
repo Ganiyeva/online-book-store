@@ -6,6 +6,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ReadBook from './pages/ReadBook';
+import Filter from './pages/Filter';
+import Home from './pages/Home';
 
 function App() {
   return (
