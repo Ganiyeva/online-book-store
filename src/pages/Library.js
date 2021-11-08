@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Comment = () => {
+export const Library = () => {
     return (
         <div>
             
         </div>
     )
 }
-
-export default Comment
