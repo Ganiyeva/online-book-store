@@ -6,8 +6,8 @@ const Header = () => {
         <div>
             <img src="" alt="book-logo"/>
             <div className="container">
+                    <Link to="/src/pages/Home.js">👌 Home</Link>
                 <nav>
-                    <Link to="/src/pages/Home.js">Home</Link>
                 </nav>
             </div>
         </div>
