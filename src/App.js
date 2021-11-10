@@ -4,6 +4,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import 'antd/dist/antd.css';
+import './index.css';
 import Home from './pages/Home';
 import { NotFound } from "./pages/NotFound";
 import { Library } from "./pages/Library";
@@ -14,7 +16,6 @@ import { Categories } from "./components/Categories.js/Categories";
 function App() {
   return (
     <Router>
-      <Categories/>
         <Routes>
           <Route path="/" element ={<Home />}/>
           <Route path="/library" element ={<Library />}/>
