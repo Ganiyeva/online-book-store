@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Filter = () => {
+export const NotFound = () => {
     return (
         <div>
-            filter
+            
         </div>
     )
 }
-
-export default Filter

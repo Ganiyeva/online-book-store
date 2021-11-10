@@ -1,14 +1,9 @@
-import './App.css';
-import Sidebar from './components/Sidebar/Sidebar';
 import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
-import ReadBook from './pages/ReadBook';
-import Filter from './pages/Filter';
 import Home from './pages/Home';
 import Header from './components/Header/Header';
 
@@ -16,11 +11,7 @@ function App() {
   return (
     <Router>
       <Header/>
-      <Sidebar/>
         <Routes>
-          <Route path="/readbook" element ={<ReadBook />}/>
-          
-          <Route path="/filter" element = {<Filter />}/>
            
           <Route path="/" element ={<Home />}/>
             

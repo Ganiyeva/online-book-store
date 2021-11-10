@@ -1,11 +1,9 @@
 import React from 'react'
 
-const ReadBook = () => {
+export const ReadBook = () => {
     return (
         <div>
-            Readbook
+            
         </div>
     )
 }
-
-export default ReadBook
