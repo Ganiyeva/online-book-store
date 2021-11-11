@@ -1,0 +1,14 @@
+.book-content {
+    padding: 25px 0;
+    background-color: #F5F5F5;
+  }
+  
+  .slider-content {
+    background-color: #FFF;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  
+  .row {
+    display: flex;
+  }
