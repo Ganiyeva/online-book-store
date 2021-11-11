@@ -1,13 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+// import { useHistory } from "react-router-dom";
 
 export const NotFound = () => {
+    // let history = useHistory();
+
+    // function handleClick() {
+    //     history.go("-1");
+    // }
     return (
         <div>
             <nav className="shelf">
-                <a className="book home-page">Home</a>
-                <a className="book about-us">About</a>
-                <a className="book faq">Store</a>
-                <a className="book contact">Contact</a>
+                <Link to="/" className="book home-page">Home</Link>
+                <Link to="/library" className="book about-us">Library</Link>
+                <Link to="/" className="book faq">Enter</Link>
+                <Link to="/register" className="book contact">Login</Link>
                 
                 <span className="book not-found"></span>
                 

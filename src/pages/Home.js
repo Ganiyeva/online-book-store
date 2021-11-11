@@ -1,11 +1,12 @@
-import Advertising from "../component/ADVERTISING/Advertising";
-import BookList from "../component/BOOKS/Booklist";
-
+import Advertising from '../components/Advertising/Advertising'
+import { BookGrid } from '../components/BookGrid.js/BookGrid';
+import Bookcard from '../components/Books/Bookcard'
 const Home = () => {
   return (
     <div>
-      <Advertising />
-      <BookList />
+        <Advertising/>
+        <Bookcard/>
+        <BookGrid/>
     </div>
   );
 };

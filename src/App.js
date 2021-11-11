@@ -12,10 +12,13 @@ import { Library } from "./pages/Library";
 import { ReadBook } from "./pages/ReadBook";
 import { Registration } from "./pages/Registration";
 import { Categories } from "./components/Categories.js/Categories";
+import 'swiper/swiper.min.css';
+import Header  from "./components/Header/Header";
 
 function App() {
   return (
     <Router>
+      <Header/>
         <Routes>
           <Route path="/" element ={<Home />}/>
           <Route path="/library" element ={<Library />}/>
