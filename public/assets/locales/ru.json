@@ -1,0 +1,14 @@
+{
+    "placeholder": "Книга или автор",
+    "library": "Библиотека",
+    "subscription": "Подписка",
+    "enter": "Войти",
+    "audio": "Аудиокниги",
+    "ru": "Russian",
+    "en": "English",
+    "uz": "Uzbek",
+    "free": "Бесплатные книги",
+    "new":"Новинки",
+    "topbook":"Топ книг",
+    "topaudio":"Топ аудиокниг"
+}

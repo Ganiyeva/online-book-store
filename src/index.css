@@ -37,3 +37,7 @@ body {
 .ant-rate-star:not(:last-child) {
   margin-right: 5px;
 }
+.reg-page{
+  margin-top: 143px;
+  text-align: center;
+}
