@@ -9,20 +9,27 @@ import './index.css';
 import Home from './pages/Home';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Registration from "./pages/Registration";
-import { Suspense } from "react";
+import { NotFound } from "./pages/NotFound";
+import { Library } from "./pages/Library";
+import { ReadBook } from "./pages/ReadBook";
+import { Registration } from "./pages/Registration";
+import { Categories } from "./components/Categories";
 
 function App() {
   return (
     <Router>
-      <Suspense fallback="loading">
-        <Header/>
-          <Routes>
-            <Route path="/" element ={<Home />}/>
-            <Route path="/registration" element ={<Registration />}/>
-          </Routes>       
+      <Suspense fallback = "loading">
+      <Header/>
+        <Routes>
+          <Route path="/" element ={<Home />}/>
+          <Route path="/library" element ={<Library />}/>
+          <Route path="/readBook" element ={<ReadBook />}/>
+          <Route path="/register" element ={<Registration />}/>
+          <Route path="/categories" element ={<Categories/>}/>
+          <Route path="*" element ={<NotFound />}/>
+        </Routes>
+        </Suspense>
         <Footer/>
-      </Suspense>
     </Router>
   );
 }
