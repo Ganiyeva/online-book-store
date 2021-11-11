@@ -15,7 +15,7 @@
     "react-i18next": "^11.14.1",
     "react-router-dom": "^6.0.1",
     "react-scripts": "4.0.3",
-    "swiper": "^7.2.0",
+    "swiper": "^6.8.4",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
