@@ -6,7 +6,6 @@ const Home = () => {
     <div>
         <Advertising/>
         <Bookcard/>
-        <BookGrid/>
     </div>
   );
 };

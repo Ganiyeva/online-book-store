@@ -187,3 +187,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+
+.categories {
+  flex: 1;
+}
