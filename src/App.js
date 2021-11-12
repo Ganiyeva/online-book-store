@@ -14,6 +14,7 @@ import { Library } from "./pages/Library";
 import { ReadBook } from "./pages/ReadBook";
 import Registration from "./pages/Registration";
 import { Categories } from "./components/Categories.js/Categories";
+import Passcode from "./components/Passcode/Passcode";
 import 'swiper/swiper.min.css'; 
 
 function App() {
@@ -25,8 +26,9 @@ function App() {
           <Route path="/" element ={<Home />}/>
           <Route path="/library" element ={<Library />}/>
           <Route path="/readBook" element ={<ReadBook />}/>
-          <Route path="/register" element ={<Registration />}/>
+          <Route path="/registration" element ={<Registration />}/>
           <Route path="/categories" element ={<Categories/>}/>
+          <Route path="/passcode" element ={<Passcode/>}/>
           <Route path="*" element ={<NotFound />}/>
         </Routes>
         </Suspense>

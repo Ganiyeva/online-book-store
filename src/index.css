@@ -181,8 +181,12 @@ body {
   margin-right: 5px;
 }
 .reg-page{
-  margin-top: 143px;
+  margin: 100px auto;
   text-align: center;
+  width: 600px;
+  padding: 15px;
+  background-color: aquamarine;
+  height: 350px;
 }
 
 .row {
@@ -190,4 +194,38 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+.reg-page input{
+  padding: 5px;
+  margin: 5px auto;
+  display: block;
+}
+.reg-page input::placeholder{
+  color: #000;
+}
+.reg-btn{
+  display: block;
+  margin:5px auto;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 110px;
+  transition: all 0.5s ease;
+}
+.reg-btn:hover{
+  color: white;
+  background-color: black;
+}
+.reg-link{
+  border: 1px solid black;
+  padding: 5px;
+  color: #000;
+  background-color: rgb(240, 11, 11);
+  width: 110px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px;
+}
+.reg-link:hover{
+  color:white
 }

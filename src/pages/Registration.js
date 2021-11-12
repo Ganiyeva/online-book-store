@@ -6,11 +6,12 @@ const Registration = () => {
         <div className="reg-page">
             <h1>Registration</h1>
             <form>
-                <input placeholder="Number"/>
-                <input placeholder="E-adress"/>
-                <input placeholder="Passcode"/>
-                <button type="submit">Registrate</button>
-                <Link to="/passcode">Forgot passcode</Link>
+                <input type="tel" placeholder="Number"/>
+                <input type="text" placeholder="E-adress"/>
+                <input type="password" placeholder="Passcode"/>
+                <button className="reg-btn" type="button">Enter</button>
+                <button className="reg-btn" type="submit">Registrate</button>
+                <Link className="reg-link" to="/passcode">Forgot passcode?</Link>
             </form>
         </div>
     )
