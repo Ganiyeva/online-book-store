@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <div>
       <Advertising />
-      <BookList />
+      <BookList type='love' title='Love' />
+      <BookList type='feminism' title='Feminism' />
+      <BookList type='inspirational' title='Inspirational' />
     </div>
   );
 };
