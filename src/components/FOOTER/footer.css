@@ -1,0 +1,19 @@
+.footer{
+    padding: 32px 0;
+}
+
+.footer-icon{  
+    padding: 8px;
+}
+.footer-img{
+    width:45px;
+    height: 30px;
+    margin-right: 8px;
+}
+.foot-num{
+    margin-right: 8px;
+    color: black;
+}
+.col{
+    width:25%
+}

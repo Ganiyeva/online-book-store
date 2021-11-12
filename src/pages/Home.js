@@ -1,11 +1,13 @@
-import Advertising from '../components/Advertising/Advertising'
-import { BookGrid } from '../components/BookGrid.js/BookGrid';
-import Bookcard from '../components/Books/Bookcard'
+import Advertising from "../components/Advertising/Advertising";
+import BookList from "../components/Books/Booklist";
+
 const Home = () => {
   return (
     <div>
-        <Advertising/>
-        <Bookcard/>
+      <Advertising />
+      <BookList type='love' title='Love' />
+      <BookList type='feminism' title='Feminism' />
+      <BookList type='inspirational' title='Inspirational' />
     </div>
   );
 };

@@ -1,0 +1,14 @@
+{
+    "placeholder": "Book or author",
+    "library": "Library",
+    "subscription": "Subscription",
+    "enter": "Enter",
+    "audio": "Audio-books",
+    "ru": "Russian",
+    "en": "English",
+    "uz": "Uzbek",
+    "free":  "Free books",
+    "new":"News",
+    "topbook":"Top books",
+    "topaudio":"Top audio books"
+}

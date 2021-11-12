@@ -1,13 +1,16 @@
 import { Rate } from 'antd';
 import "./bookcard.css";
 
-const BookCard = () => {
+const BookCard = ({bookObj}) => {
+
   return (
     <div className="card">
-      <img className="image" src="img/book.jpg" alt="" />
+      <div>
+        {bookObj.imageLinks ? <img className="image" src={bookObj.imageLinks.smallThumbnail} alt={bookObj.title} /> : <div></div>}
+      </div>
       <Rate />
-      <h4 className="name"> Жизнь — это подарок. 102 истории о том, как находить счастье в мелочах </h4>
-      <h5 className="author"> Стефанос Ксенакис </h5>
+      <h4 className="name"> {bookObj.title} </h4>
+      <h5 className="author"> {bookObj.authors} </h5>
     </div>
   )
 }
