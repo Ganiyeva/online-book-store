@@ -180,12 +180,10 @@ body {
 .ant-rate-star:not(:last-child) {
   margin-right: 5px;
 }
-<<<<<<< HEAD
 .reg-page{
   margin-top: 143px;
   text-align: center;
 }
-=======
 
 .row {
   display: flex;
@@ -193,4 +191,3 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
->>>>>>> e6b7b15b896d9cf0769125b500c131f45b6cd562

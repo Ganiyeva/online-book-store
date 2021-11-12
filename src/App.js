@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 import { NotFound } from "./pages/NotFound";
 import { Library } from "./pages/Library";
 import { ReadBook } from "./pages/ReadBook";
-import { Registration } from "./pages/Registration";
+import Registration from "./pages/Registration";
 import { Categories } from "./components/Categories.js/Categories";
 import 'swiper/swiper.min.css'; 
 
