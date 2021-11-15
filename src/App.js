@@ -13,7 +13,7 @@ import { NotFound } from "./pages/NotFound";
 import { Library } from "./pages/Library";
 import { ReadBook } from "./pages/ReadBook";
 import Registration from "./pages/Registration";
-import { Categories } from "./components/Categories.js/Categories";
+import { Categories } from "./components/Categories/Categories";
 import Passcode from "./components/Passcode/Passcode";
 import 'swiper/swiper.min.css'; 
 
