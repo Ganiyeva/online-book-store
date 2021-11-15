@@ -1,13 +1,21 @@
 import './Categories.css'
-import React from 'react'
+import React from 'react';
+import { useEffect } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
-export const Categories = (cat) => {
+// const GOOGLE_API_KEY = 'AIzaSyBEHIje4bmaXSixVqZ9HXZ0bqDBnOUmnxc';
+// const NYTIMES_API_KEY = 'caf84bdb-c39b-45fe-b2a9-12ed9a889b2d';
+// const GOOGLE_API = `https://www.googleapis.com/books/v1/volumes?q=flower&key=${GOOGLE_API_KEY}`;
+// const NYTIMES_API = `https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json?api-key=${NYTIMES_API_KEY}`;
+// const BOOKS__API = `https://www.googleapis.com/books/v1/volumes?q=quilting`
+
+export const Categories = ({title, id}) => {
     // useEffect(() => {
-    //     fetch('https://www.poemist.com/api/v1/randompoems')
+    //     fetch(BOOKS__API)
     //     .then(res => res.json())
     //     .then(data => console.log(data))
     // }, [])
     return (
-        <button type="button" className="categorie">{cat.name} Top books</button>
+            <NavLink to={`/library/${id}`} key={id} className="categorie">{title}</NavLink> 
     )
 }

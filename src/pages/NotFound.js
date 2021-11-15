@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-// import { useHistory } from "react-router-dom";
+import { useNavigate  } from "react-router-dom";
 
 export const NotFound = () => {
-    // let history = useHistory();
+    let history = useNavigate();
 
     // function handleClick() {
     //     history.go("-1");
@@ -13,7 +13,7 @@ export const NotFound = () => {
             <nav className="shelf">
                 <Link to="/" className="book home-page">Home</Link>
                 <Link to="/library" className="book about-us">Library</Link>
-                <Link to="/" className="book faq">Enter</Link>
+                <button onClick={() => history(-1)} className="book faq">Enter</button>
                 <Link to="/register" className="book contact">Login</Link>
                 
                 <span className="book not-found"></span>

@@ -1,8 +1,10 @@
 .categorie {
+    display: block;
+    list-style-type: upper-alpha;
     padding: 10px 20px;
     margin: 10px 0;
     border: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color:#ffff;
     border-radius:15px;
     background-image: linear-gradient(40deg,#d38cff,#6272fc);
@@ -11,9 +13,9 @@
     transition: all .2s ease-out;
 }
 
-.active_categorie {
+.categorie.active {
     background-image: linear-gradient(30deg,#f5b6b3,#6272fc);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     transform: scale(0.9);
     transition-duration: 1s ease-out;
     box-shadow: #030557 0px 25px 35px -13px;

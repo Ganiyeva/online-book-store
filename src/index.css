@@ -66,6 +66,7 @@ code {
 .book {
   position: absolute;
   box-sizing: border-box;
+  border: none;
   padding: 0.8rem 4rem 0.8rem 2rem;
   border-radius: 0.25rem;
   background-color: rgba(255, 255, 255, 0.1);
@@ -195,6 +196,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+
+.categories {
+  flex: 1;}
 .reg-page input{
   padding: 5px;
   margin: 5px auto;
