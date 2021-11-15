@@ -24,8 +24,10 @@ function App() {
       <Header/>
         <Routes>
           <Route path="/" element ={<Home />}/>
+          <Route path="/library/:genreid" element ={<Library />}/>
           <Route path="/library" element ={<Library />}/>
-          <Route path="/readBook" element ={<ReadBook />}/>
+          {/* <Route path="/readBook" element ={<ReadBook />}/> */}
+          <Route path="/readBook/:id" element ={<ReadBook />}/>
           <Route path="/registration" element ={<Registration />}/>
           <Route path="/categories" element ={<Categories/>}/>
           <Route path="/passcode" element ={<Passcode/>}/>

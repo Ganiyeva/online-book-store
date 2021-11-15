@@ -1,50 +1,45 @@
 import './BookGrid.css'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
+// import usePrevious from '../hooks'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { GOOGLE_API_KEY } from '../../global';
 
-export const BookGrid = () => {
+export const BookGrid = ({genre}) => {
+
+    const [books, setBooks] = useState([]);
+    // const [totalPage, setTotalPage] = useState(0);
+
+    // const prevGenre = usePrevious(genre);
+    // let list;
+
+
+    useEffect(() => {
+        fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${genre}&key=${GOOGLE_API_KEY}`)
+        .then(res => res.json())
+        .then(data => {
+            setBooks(data.items);
+            console.log(data.items[0].volumeInfo.imageLinks)
+        })
+    }, [genre])
+
     return (
+
         <div className="book-grid">
             <Swiper spaceBetween={30} slidesPerView={4}>
-                <SwiperSlide>
-                <div className="book-grid__book">
-                    <div className="book__cover" style={{backgroundImage:'url(https://1.bp.blogspot.com/-D2I5IQPi4Os/XOsemT2JokI/AAAAAAAAAjU/yhsbsPjfjl8cIrb41SeYW75RYxSz7t-GwCPcBGAYYCw/s320/%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25BA%2521%2B-%2Bvol%2B8.jpg)'}}>
-                        <div className="book__detail">Gamers! - Vol.8</div>
-                    </div>
-                    <div className="book__page"></div>
-                </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                <div className="book-grid__book">
-                    <div className="book__cover" style={{backgroundImage:'url(https://1.bp.blogspot.com/-D2I5IQPi4Os/XOsemT2JokI/AAAAAAAAAjU/yhsbsPjfjl8cIrb41SeYW75RYxSz7t-GwCPcBGAYYCw/s320/%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25BA%2521%2B-%2Bvol%2B8.jpg)'}}>
-                        <div className="book__detail">Gamers! - Vol.8</div>
-                    </div>
-                    <div className="book__page"></div>
-                </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                <div className="book-grid__book">
-                    <div className="book__cover" style={{backgroundImage:'url(https://1.bp.blogspot.com/-D2I5IQPi4Os/XOsemT2JokI/AAAAAAAAAjU/yhsbsPjfjl8cIrb41SeYW75RYxSz7t-GwCPcBGAYYCw/s320/%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25BA%2521%2B-%2Bvol%2B8.jpg)'}}>
-                        <div className="book__detail">Gamers! - Vol.8</div>
-                    </div>
-                    <div className="book__page"></div>
-                </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                <div className="book-grid__book">
-                    <div className="book__cover" style={{backgroundImage:'url(https://1.bp.blogspot.com/-D2I5IQPi4Os/XOsemT2JokI/AAAAAAAAAjU/yhsbsPjfjl8cIrb41SeYW75RYxSz7t-GwCPcBGAYYCw/s320/%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25BA%2521%2B-%2Bvol%2B8.jpg)'}}>
-                        <div className="book__detail">Gamers! - Vol.8</div>
-                    </div>
-                    <div className="book__page"></div>
-                </div>
-                </SwiperSlide>
+                {books.map(el => {
+                    <SwiperSlide>
+                        <div className="book-grid__book">
+                            <div className="book__cover" >
+                                <div className="book__detail">{el.volumeInfo.title}</div>
+                            </div>
+                            <div className="book__page"></div>
+                        </div>
+                    </SwiperSlide>
+                })}
 
             </Swiper>
-            {/* <button type="button" className="load custom-btn">Load more</button> */}
+            <button type="button" className="load custom-btn">Load more</button>
         </div>
     )
 }

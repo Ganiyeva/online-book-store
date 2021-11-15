@@ -36,7 +36,7 @@ const BookList = ({type, title}) => {
             {error ? <img src="img/error_401.webp" alt="error 401" className="logo-401" /> : ''}
           </div>
           <Swiper modules={Navigation} navigation={true} pagination={{ clickable: true }} grabCursor={true} spaceBetween={0} slidesPerView={8}>
-            { bookList.map(el => (<SwiperSlide key={el.id} > <BookCard bookObj={el.volumeInfo} /> </SwiperSlide>)) }
+            { bookList.map(el => (<SwiperSlide key={el.id} > <BookCard bookObj={el.volumeInfo} id={el.id} /> </SwiperSlide>)) }
           </Swiper>
         </div>
       </div>
