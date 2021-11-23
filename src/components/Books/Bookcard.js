@@ -1,7 +1,6 @@
 import { Rate } from 'antd';
 import { Link } from 'react-router-dom';
 import "./bookcard.css";
-import { Link  } from 'react-router-dom';
 
 const BookCard = ({bookObj, id}) => {
   return (
