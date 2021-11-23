@@ -1,3 +1,5 @@
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css'; 
 import React, { Suspense } from "react";
 import {
   BrowserRouter as Router,
@@ -13,9 +15,8 @@ import { NotFound } from "./pages/NotFound";
 import { Library } from "./pages/Library";
 import { ReadBook } from "./pages/ReadBook";
 import Registration from "./pages/Registration";
-import { Categories } from "./components/Categories.js/Categories";
+import { Categories } from "./components/Categories/Categories";
 import Passcode from "./components/Passcode/Passcode";
-import 'swiper/swiper.min.css'; 
 
 function App() {
   return (

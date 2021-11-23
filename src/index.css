@@ -163,7 +163,7 @@ code {
 
 body {
   margin: 0;
-  padding-top: 143px;
+  padding-top: 170px;
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -198,7 +198,11 @@ body {
 }
 
 .categories {
-  flex: 1;}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .reg-page input{
   padding: 5px;
   margin: 5px auto;
@@ -232,4 +236,55 @@ body {
 }
 .reg-link:hover{
   color:white
+}
+
+.book-img_bg {
+  width: 40%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.book-img_shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffd4516b;
+}
+
+.book-img {
+  width: 200px;
+  position: absolute;
+  top: calc(100% - 80%);
+  right: -50px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3) ;
+}
+
+.book-info {
+  width: 60%;
+  padding-left: 85px;
+}
+
+.book-info span {
+  display: block;
+  font-weight: 500;
+}
+
+.book-text {
+  margin: 20px 0;
+}
+
+.share-btn {
+  border: none;
+  color: cornflowerblue;
+  background-color: transparent;
+}
+
+.similar-title {
+  margin: 10px;
+  font-size: 24px;
 }

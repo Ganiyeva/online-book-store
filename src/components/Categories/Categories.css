@@ -1,8 +1,9 @@
 .categorie {
-    display: block;
+    /* display: block; */
+    width: 20%;
     list-style-type: upper-alpha;
     padding: 10px 20px;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     border: none;
     font-size: 1.2rem;
     color:#ffff;
