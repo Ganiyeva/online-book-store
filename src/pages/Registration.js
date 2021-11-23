@@ -1,18 +1,26 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
 
-const Registration = () => {
+export const Registration = () => {
     return (
-        <div className="reg-page">
-            <h1>Registration</h1>
-            <form>
-                <input type="tel" placeholder="Number"/>
-                <input type="text" placeholder="E-adress"/>
-                <input type="password" placeholder="Passcode"/>
-                <button className="reg-btn" type="button">Enter</button>
-                <button className="reg-btn" type="submit">Registrate</button>
-                <Link className="reg-link" to="/passcode">Forgot passcode?</Link>
-            </form>
+        <div class="form">
+            <div class="title">Welcome</div>
+            <div class="subtitle">Let's create your account!</div>
+            <div class="input-container ic1">
+                <input id="firstname" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="firstname" class="placeholder">First name</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="lastname" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="lastname" class="placeholder">Last name</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="email" class="input" type="text" placeholder=" " />
+                <div class="cut cut-short"></div>
+                <label for="email" class="placeholder">Email</label>
+            </div>
+            <button type="text" class="submit">Registration</button>
         </div>
     )
 }
